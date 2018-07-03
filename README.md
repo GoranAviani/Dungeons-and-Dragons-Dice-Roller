@@ -1,9 +1,9 @@
-#Dugeons & Dragons Dice Roller
+# Dugeons & Dragons Dice Roller
 
 ![D&D Dice](./images/dices.jpg)
 
 
-##Description
+## Description
 
 
 When playing Dungeons and Dragons you need to create character sheets. Way to determine character stats in sheets is rolling the dice. 
@@ -15,14 +15,14 @@ so I need to create my own Dungeons & Dragons Dice Roller.
 
 
 
-##Formal Inputs & Outputs
+## Formal Inputs & Outputs
 
-###Input description
+### Input description
 
 Input must will contain one line in the form of "[Number]d[Number]".
 
 
-#####For example:
+##### For example:
 
 * 2d6
 
@@ -52,7 +52,7 @@ The second number, the number of sides of the dice, can be any integer between 2
 
 
 
-###Output description
+### Output description
 
 Output should be the sum of all the rolls of that specified die. So if your input is "2d6", the output should look something like
 
@@ -63,7 +63,7 @@ Output should be the sum of all the rolls of that specified die. So if your inpu
 Just a single number, you rolled a 6-sided dice, and they added up to 8.
 
 
-##Notes/ Additional Info
+## Notes/ Additional Info
 
 A dice roll is basically the same as picking a random number between 1 and 6 (or 12, or 20, or however many sides the die has). 
 
