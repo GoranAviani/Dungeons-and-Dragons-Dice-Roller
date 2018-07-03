@@ -1,5 +1,11 @@
 #Dungeons and Dragons Dice Roller
 
+
+def get_random_numbers(inFront, inBack):
+    pass
+
+
+
 def user_input():
     userInput = input("Enter number of dices and sides in format - [Number]d[Sides]:  ")
     return userInput
@@ -31,7 +37,7 @@ def check_for_numerical(userInput):
 
     print("front "+inFront)
     print("back "+inBack)
-    return userInput, resultFront, resultBack
+    return userInput, resultFront, resultBack, inFront, inBack
 
 
 
@@ -49,15 +55,15 @@ def main():
         elif "d" not in userInput:
             print("Your D&D dices are missing letter 'd' ! Try again.")
 
-        userInput, resultFront, resultBack = check_for_numerical(userInput)
+        userInput, resultFront, resultBack, inFront, inBack = check_for_numerical(userInput)
 
         if resultFront == "NOT":
-            print("You don't only have numbers infront of letter 'd'. Try again.")
+            print("You don't have only numbers in front of letter 'd'. Try again.")
 
         if resultBack == "NOT":
-            print("You don't only have numbers inback of letter 'd'. Try again.")
-
-
+            print("You don't  have only numbers in back of letter 'd'. Try again.")
+        if resultFront == "OK" and resultBack == "OK":
+            diceTotal, diceResults = get_random_numbers(inFront, inBack)
 
 if __name__ == "__main__":
     main()
