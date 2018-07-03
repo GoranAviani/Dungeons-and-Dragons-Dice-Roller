@@ -29,6 +29,7 @@ def user_input():
     return userInput
 
 #Check in front and in back od letter d for numbers
+#Get numbers in front and in back of "d"
 def check_for_numerical(userInput):
     inFront = ""
     inBack = ""

@@ -1,37 +1,40 @@
-Dugeons & Dragons Dice Roller
+#Dugeons & Dragons Dice Roller
 
-Description
+![D&D Dice](![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png))
+
+
+##Description
 
 
 When playing Dungeons and Dragons you need to create character sheets. Way to determine character stats in sheets is rolling the dice. 
 
 Sadly, I have lost all my dice and I don't like the official online dice roller: 
-
 https://www.wizards.com/dnd/dice/dice.htm
-
-So i need to create my own Dungeons & Dragons Dice Roller.
-
+so I need to create my own Dungeons & Dragons Dice Roller.
 
 
 
-Formal Inputs & Outputs
-Input description
+
+##Formal Inputs & Outputs
+
+###Input description
 
 Input must will contain one line in the form of "[Number]d[Number]".
 
-For example:
 
-2d6
+#####For example:
 
-3d6
+* 2d6
 
-4d9
+* 3d6
 
-2d10
+* 4d9
 
-4d12
+* 2d10
 
-5d4
+* 4d12
+
+* 5d4
 
 If you've played D&D you probably recognize those, but for the rest of you, this is what those mean:
 
@@ -47,30 +50,32 @@ The first number, the number of dice to roll, can be any integer between 1 and 1
 The second number, the number of sides of the dice, can be any integer between 2 and 100, inclusive.
 
 
-Output description
+
+
+###Output description
 
 Output should be the sum of all the rolls of that specified die. So if your input is "2d6", the output should look something like
 
+`8`
 
-8
 
 
 Just a single number, you rolled a 6-sided dice, and they added up to 8.
 
 
-Notes/ Additional Info
+##Notes/ Additional Info
 
 A dice roll is basically the same as picking a random number between 1 and 6 (or 12, or 20, or however many sides the die has). 
 
 In addition to the sum of dice roll for your output, this programm will print out the result of each roll on the same line, using a format that looks something like
 
-14: 6 3 5
+* 14: 6 3 5
 
-22: 10 7 1 4
+* 22: 10 7 1 4
 
-9: 9
+* 9: 9
 
-11: 3 2 2 1 3
+* 11: 3 2 2 1 3
 
 
 You can manually input more rolls without the need to start the program again, leave the program open and every time you want to roll more dice, you just type it in and hit enter.
