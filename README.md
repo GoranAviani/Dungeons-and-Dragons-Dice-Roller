@@ -1,4 +1,4 @@
-Dugeons $ Dragons dice roller
+Dugeons & Dragons Dice Roller
 
 Description
 
@@ -10,6 +10,8 @@ Sadly, I have lost all my dice and I don't like the official online dice roller:
 https://www.wizards.com/dnd/dice/dice.htm
 
 So i need to create my own Dungeons & Dragons Dice Roller.
+
+
 
 
 Formal Inputs & Outputs

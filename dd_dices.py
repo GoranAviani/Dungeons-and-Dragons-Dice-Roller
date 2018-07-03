@@ -1,4 +1,5 @@
-#Dungeons and dragons dice simulator
+#Dungeons and Dragons Dice Roller
+
 def user_input():
     userInput = input("Enter number of dices and sides in format - [Number]d[Sides]:  ")
     return userInput
