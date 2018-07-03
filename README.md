@@ -1,21 +1,34 @@
-Dugeons and dragons dice simulator
+Dugeons $ Dragons dice roller
 
 Description
 
-When playing Dungeons and Dragons you need to create character sheets. Way to determine character stats in sheets is rolling the dice. Sadly, I have lost all my dice so i need to create my own Dungeons and Dragons dice trowing simulator.
+
+When playing Dungeons and Dragons you need to create character sheets. Way to determine character stats in sheets is rolling the dice. 
+
+Sadly, I have lost all my dice and I don't like the official online dice roller: 
+
+https://www.wizards.com/dnd/dice/dice.htm
+
+So i need to create my own Dungeons & Dragons Dice Roller.
 
 
 Formal Inputs & Outputs
 Input description
 
-Input must will contain one line in the form of "[Number]d[Number]":
+Input must will contain one line in the form of "[Number]d[Number]".
+
 For example:
 
 2d6
+
 3d6
+
 4d9
+
 2d10
+
 4d12
+
 5d4
 
 If you've played D&D you probably recognize those, but for the rest of you, this is what those mean:
@@ -36,7 +49,9 @@ Output description
 
 Output should be the sum of all the rolls of that specified die. So if your input is "2d6", the output should look something like
 
+
 8
+
 
 Just a single number, you rolled a 6-sided dice, and they added up to 8.
 
@@ -48,8 +63,11 @@ A dice roll is basically the same as picking a random number between 1 and 6 (or
 In addition to the sum of dice roll for your output, this programm will print out the result of each roll on the same line, using a format that looks something like
 
 14: 6 3 5
+
 22: 10 7 1 4
+
 9: 9
+
 11: 3 2 2 1 3
 
 
