@@ -1,6 +1,6 @@
 #Dugeons & Dragons Dice Roller
 
-![D&D Dice](![alt text](https://github.com/GoranAviani/Dungeons-and-Dragons-Dice-Roller/blob/master/images/dices.jpg))
+![D&D Dice](https://github.com/GoranAviani/Dungeons-and-Dragons-Dice-Roller/blob/master/images/dices.jpg)
 
 
 ##Description
