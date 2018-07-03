@@ -1,10 +1,24 @@
 #Dungeons and Dragons Dice Roller
+import random
 
 
+def display_results(diceTotal, diceResults):
+    print(diceTotal)
+    print(diceResults)
+
+#Getting numbers for dice- in front is number ofdices, inBack is no. of sides of each dice
 def get_random_numbers(inFront, inBack):
-    pass
+    inFront = int(inFront)
+    inBack = int(inBack)
+    diceTotal = 0
+    diceResults = []
 
+    for x in range(int(inFront)):
+        dice_roll = random.randint(1,inBack)
+        diceTotal += dice_roll
+        diceResults.append(dice_roll)
 
+    return diceTotal, diceResults
 
 def user_input():
     userInput = input("Enter number of dices and sides in format - [Number]d[Sides]:  ")
@@ -64,6 +78,10 @@ def main():
             print("You don't  have only numbers in back of letter 'd'. Try again.")
         if resultFront == "OK" and resultBack == "OK":
             diceTotal, diceResults = get_random_numbers(inFront, inBack)
+
+
+            display_results(diceTotal, diceResults)
+
 
 if __name__ == "__main__":
     main()
