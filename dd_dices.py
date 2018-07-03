@@ -3,8 +3,12 @@ import random
 
 
 def display_results(diceTotal, diceResults):
-    print(diceTotal)
-    print(diceResults)
+    result = ""
+    for x in diceResults:
+        result += ("{} ".format(x))
+    print("---------------------------------------------------------------")
+    print("Total: {}. Results by Dice: {}" .format(diceTotal, result))
+    print("---------------------------------------------------------------")
 
 #Getting numbers for dice- in front is number ofdices, inBack is no. of sides of each dice
 def get_random_numbers(inFront, inBack):
@@ -21,7 +25,7 @@ def get_random_numbers(inFront, inBack):
     return diceTotal, diceResults
 
 def user_input():
-    userInput = input("Enter number of dices and sides in format - [Number]d[Sides]:  ")
+    userInput = input("\nEnter number of dices and sides in format - [Number]d[Sides]:  ")
     return userInput
 
 #Check in front and in back od letter d for numbers
@@ -49,8 +53,8 @@ def check_for_numerical(userInput):
         resultBack = "NOT"
 
 
-    print("front "+inFront)
-    print("back "+inBack)
+    #print("front "+inFront)
+    #print("back "+inBack)
     return userInput, resultFront, resultBack, inFront, inBack
 
 
@@ -63,19 +67,24 @@ def main():
         userInput = user_input()
 
         if userInput.lower() == "x":
+            print("---------------------------------------------------------------")
             print("Good bye.")
             break
 
         elif "d" not in userInput:
             print("Your D&D dices are missing letter 'd' ! Try again.")
+            print("---------------------------------------------------------------")
 
         userInput, resultFront, resultBack, inFront, inBack = check_for_numerical(userInput)
 
         if resultFront == "NOT":
+
             print("You don't have only numbers in front of letter 'd'. Try again.")
+            print("---------------------------------------------------------------")
 
         if resultBack == "NOT":
             print("You don't  have only numbers in back of letter 'd'. Try again.")
+            print("---------------------------------------------------------------")
         if resultFront == "OK" and resultBack == "OK":
             diceTotal, diceResults = get_random_numbers(inFront, inBack)
 
